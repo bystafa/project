@@ -1,0 +1,1462 @@
+@import "~bootstrap/scss/bootstrap";
+@import "sfuidisplay.css";
+@import "robot.css";
+
+.menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+.ref, .events, .footerUpper, footer {
+    padding: 0 160px;
+}
+.container {
+    padding: 0;
+}
+hr {
+    margin: 0;
+} 
+
+.header {
+    background-color: #3b4256;
+    padding: 18px 160px 19px;
+    a, span {
+        font-family: GOSTUI2;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #dde1e6;
+        text-decoration: none;
+    }
+    .img__points {
+        width: 21px;
+        height: 24px;
+        max-width: 100%;
+        margin-right: 16px;
+    }
+    .img__search {
+        width: 24px;
+        height: 24px;
+        max-width: 100%;
+        margin-right: 8px;
+    }
+    a {
+        margin-left: 24px;
+    }
+}
+
+.menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    .d-flex {
+        align-items: center;
+    }
+    a {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: right;
+        color: #3b4256;
+        text-decoration: none;
+    }
+    .img__logo {
+        height: 56px;
+        width: 56px;
+        z-index: 10;
+        position: relative;
+    }
+    .right {
+        a {
+            margin-left: 26px;
+        }
+    }
+    .header__burger {
+        display: none;
+    }
+}
+
+.information {
+    padding-top: 48px;
+    padding-bottom: 87px;
+    .link {
+        display: flex;
+        flex-direction: column;
+    }
+    h1, h4, span {
+        font-stretch: normal;
+        font-style: normal;
+        text-align: left;
+        color: #3b4256;
+    }
+    h1 {
+        font-family: SFUIDisplay;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.17;
+        letter-spacing: -0.6px;
+    }
+    h4 {
+        font-family: GOSTUI2;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+    }
+    span {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: normal;
+    }
+    a {
+        text-decoration: none;
+        margin-bottom: 19px;
+    }
+}
+
+.mainText {
+    background-color: #fff;
+    h2, p, span {
+        font-stretch: normal;
+        font-style: normal;
+        text-align: left;
+        font-family: GOSTUI2;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+        color: #3b4256;
+        margin-bottom: 21px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #848e99;
+        margin-bottom: 40px;
+    }
+    span {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #848e99;
+    }
+    .img__main {
+        max-width: 100%;
+    }
+}
+
+.text {
+    background-color: #fff;
+    padding-top: 63px;
+    padding-bottom: 80px;
+    .upper {
+        span {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.44;
+            color: #3b4256;
+        }
+    }
+    .lower {
+        span {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.43;
+            color: #848e99;
+        }
+    }
+    span {
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        font-family: GOSTUI2;
+    }
+}
+
+.forPeople {
+    background-color: #f4f7fb;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    a {
+        text-decoration: none;
+    }
+    h2, h3, span, .a__goto {
+        font-stretch: normal;
+        font-style: normal;
+        text-align: left;
+    }
+    h2 {
+        font-family: SFUIDisplay;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+        color: #3b4256;
+        margin-bottom: 29px;
+    }
+    .a__goto {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #848e99;
+        .img__right {
+            margin-left: 10px;
+        }
+    }
+    h3 {
+        font-family: GOSTUI2;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #3b4256;
+    }
+    .big {
+        background-color: #fff;
+        margin-bottom: 8px;
+        padding: 27px 32px;
+        span {
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            color: #848e99;
+        }
+        .img__icon {
+            background: url("../../logo/ShapeCopy4.png" ) no-repeat center center;
+            width: 128px;
+            height: 70px;
+            background-size: contain;
+            position: relative;
+        }
+        .img__icon::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../logo/Miniicon.png") no-repeat center center;
+        }
+    
+        .img__icon1 {
+            background: url("../../logo/ShapeCopy4.png" ) no-repeat center center;
+            width: 128px;
+            height: 70px;
+            background-size: contain;
+            position: relative;
+        }
+        .img__icon1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../logo/XMLID_620_.png") no-repeat center center;
+        }
+    }
+    .small {
+        background-color: #fff;
+        padding: 14px 32px;
+        .icons {
+            margin-right: 20px;
+        }
+        .down {
+            width: 32px;
+            height: 35px;
+        }
+        img {
+            position: relative;
+        }
+        .image {
+            width: 16px;
+            height: 16px;
+        }
+        .down-three {
+            z-index: 1;
+            left: 12px;
+            bottom: 5px;
+        }
+        .drop {
+            z-index: 2;
+            left: 40px;
+            bottom: 5px;
+        }
+        .down-two {
+            z-index: 3;
+            left: 50px;
+            bottom: 5px;
+        }
+        .points {
+            width: 16px;
+            height: 10px;
+            z-index: 4;
+            left: 79px;
+            bottom: 5px;
+        }
+        .down-one {
+            z-index: 5;
+            left: 90px;
+            bottom: 5px;
+        }
+        .house {
+            z-index: 6;
+            left: 118px;
+            bottom: 5px;
+        }
+    }
+    .box {
+        background: #0c49cd;
+        border-radius: 5px;
+        padding: 32px 32px;
+        ul, li {
+            display: block;
+            padding: 0;
+            margin-bottom: 14px;
+        }
+        a {
+            text-decoration: none;
+            font-family: GOSTUI2;
+            font-size: 18px;
+            font-weight: 500;
+            color: #f4f7fb;
+        }
+        button {
+            margin-top: 30px;
+            outline: none;
+            padding: 12px 59px;
+            border-radius: 5px;
+            border: 0;
+            span {
+                font-family: GOSTUI2;
+                font-size: 16px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: center;
+                color: #3b4256;
+            }
+        }
+    }
+
+}
+
+.mapSvg {
+    padding-top: 80px;
+    position: relative;
+    display: block;
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+    h2 {
+        font-family: SFUIDisplay;
+        font-size: 32px;
+        font-weight: 900;
+        color: #3b4256;
+    }
+    .part {
+        opacity: .3;
+    }
+    .part:hover {
+        transition: opacity .2s ease;
+        opacity: .5;
+    }
+    a {
+        text-decoration: none;
+    }
+    span {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3b4256;
+        margin-right: 15px;
+    }
+    img {
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .but {
+        z-index: 1001;
+        padding: 12px 16px 8px 15px;
+        position: absolute;
+        background: #f4f7fb;
+    }
+    .activeMap {
+        transition: opacity .2s ease;
+        opacity: .5;
+    }
+    .central,.east,.ural,.volga,.south,.sibir,.caucas,.north {
+        position: relative;
+        display: none;
+    }
+    .central {
+        bottom: 200px;
+        right: 50px;
+    }
+    .east {
+        bottom: 400px;
+        left: 350px;
+    }
+    .caucas {
+        right: 360px;
+        bottom: 120px;
+    }
+    .north {
+        bottom: 365px;
+        right: 750px;
+    }
+    .sibir {
+        bottom: 250px;
+        left: 200px;
+    }
+    .south {
+        bottom: 180px;
+        right: 410px;
+    }
+    .ural {
+        bottom: 350px;
+        right: 500px;
+    }
+    .volga {
+        bottom: 280px;
+        right: 650px;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+    }
+
+}
+
+.activity {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-color: #f4f7fb;
+    p {
+        font-family: GOSTUI2;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #f4f7fb;
+        position: absolute;
+        z-index: 2;
+        bottom: 40px;
+        left: 40px;
+    }
+    a {
+        text-decoration: none;
+    }
+    h2, .a__goto, p, h3, span, .emailText, .email {
+        text-align: left;
+        font-stretch: normal;
+        font-style: normal;
+    }
+    h2 {
+        font-family: SFUIDisplay;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+        color: #3b4256;
+        margin-bottom: 29px;
+    }
+    .a__goto {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #848e99;
+        .img__right {
+            margin-left: 10px;
+        }
+    }
+    .img__act {
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+    .card {
+        border: 0;
+        .cardbody {
+            padding: 32px;
+        }
+        h3 {
+            font-family: GOSTUI2;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+            letter-spacing: normal;
+            color: #3b4256;
+        }
+        span {
+            font-family: GOSTUI2;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #848e99;
+        }
+        .emailText {
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            color: #848e99;
+        }
+        .email {
+            font-family: GOSTUI2;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #3b4256;
+        }
+        button {
+            outline: none;
+            border: 0px;
+            width: 48px;
+            height: 48px;
+            background-color: #0c49cd;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+            .img__button {
+                position: absolute;
+                z-index: 2;
+                left: 15px;
+                top: 15px;
+            }
+        }
+        .info {
+            margin-top: 25px;
+        }
+    }
+    .women {
+        img {
+            width: 32px;
+            height: 32px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        margin-top: 8px;
+        background-color: #fff;
+        padding: 13px 32px;
+        h4 {
+            font-family: GOSTUI2;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #3b4256;
+        }
+        .woman__first {
+            z-index: 3;
+            position: relative;
+            left: 50px;
+        }
+        .woman__second {
+            z-index: 2;
+            position: relative;
+            left: 30px;
+        }
+        .woman__third {
+            z-index: 1;
+            position: relative;
+            left: 10px;
+        }
+    }
+}
+
+.events {
+    background-color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    hr {
+        display: none;
+    }
+    h2, a {
+        text-align: left;
+        font-stretch: normal;
+        font-style: normal;
+    }
+    h2 {
+        font-family: SFUIDisplay;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+        color: #3b4256; 
+    }
+
+    h3 {
+        font-family: SFUIDisplay;
+        font-size: 48px;
+        font-weight: 900;
+        text-align: center;
+        color: #3b4256;
+    }
+
+    p {
+        font-family: GOSTUI2;
+        font-size: 14px;
+        text-align: center;
+        color: #3b4256;
+    }
+    .row {
+        span {
+            font-family: GOSTUI2;
+            font-size: 18px;
+            font-weight: 500;
+            color: #3b4256;
+        }
+    }
+
+    .city {
+        font-family: GOSTUI2;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        color: #848e99;
+    }
+
+    .head {
+        margin-bottom: 45px;
+    }
+
+    a {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #848e99;
+        text-decoration: none;
+        .img__right {
+            margin-left: 10px;
+        }
+    }
+
+    .town {
+        margin-top: 12px;
+    }
+}
+
+.ref {
+    background: #f4f7fb;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    img {
+        max-width: 100%;
+    }
+    .block {
+        background: #ffffff;
+        padding: 20px 30px;
+        margin-bottom: 8px;
+        .right {
+            float: right;
+            margin-top: 7px;
+        }
+        .gerb {
+            margin-right: 12px;
+        }
+        span {
+            font-family: GOSTUI2;
+            font-size: 18px;
+            font-weight: 500;
+            color: #3b4256;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .list {
+        background: #ffffff;
+        padding: 12px 32px 17px;
+        margin-bottom: 8px;
+        .arrow {
+            margin-top: 3px;
+            margin-left: 15px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #c7ccd1;
+            border-right: 2px solid #c7ccd1;
+        }
+        .arrow-bottom {
+            transform: rotate(135deg);
+        }
+        .arrow-top {
+            margin-top: 7px;
+            transform: rotate(-45deg);
+        }
+        .this {
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-weight: 500;
+            color: #3b4256;
+        }
+        .that {
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-weight: 500;
+            color: #848e99;
+
+        }
+
+    }
+    .links {
+        padding: 10px 12px;
+        span {
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-weight: 500;
+            color: #3b4256;
+        }
+    }
+    .active {
+        background: #ffffff;
+    }
+    h2 {
+        margin-bottom: 29px;
+    }
+
+    .menuRef {
+        margin-top: 20px;
+        li {
+            list-style: none;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            font-family: GOSTUI2;
+            font-size: 14px;
+            font-weight: 500;
+            color: #848e99;
+        }
+        .menu__list {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    }
+}
+
+.footerUpper {
+    background: #3b4256;
+    padding-top: 84px;
+    img {
+        height: 56px;
+        width: 56px;
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+    button {
+        padding: 7px 38px 14px;
+        border: solid 1px #848e99;;
+        border-radius: 4px;
+        background: #3b4256;
+        margin-top: 24px;
+        outline: none !important;
+    }
+    span {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #f4f7fb;
+    }
+    h2 {
+        font-family: SFUIDisplay;
+        font-size: 24px;
+        font-weight: 900;
+        color: #ffffff;
+    }
+    p {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        color: #dde1e6;
+        margin-bottom: 0;
+    }
+    a {
+        font-family: GOSTUI2;
+        font-size: 16px;
+        font-weight: 500;
+        color: #848e99;
+        text-decoration: none;
+    }
+    h3 {
+        font-family: GOSTUI2;
+        font-size: 20px;
+        font-weight: 500;
+        color: #f4f7fb;
+        margin-bottom: 25px;
+    }
+    .link {
+        margin-bottom: 11px;
+    }
+    .row {
+        margin-bottom: 52px;
+    }
+    hr {
+        margin-top: 48px;
+    }
+
+}
+
+footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: #3b4256;
+    position: relative;
+    
+   span {
+    font-family: GOSTUI2;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #dde1e6;
+    margin-left:16px;
+   }
+   .net {
+       margin-left: 16px;
+   }
+}
+
+.distr {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+    .text {
+        .upper {
+            height: 152px;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+}
+
+@media screen and (max-width: 1330px) and (min-width: 1200px){
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1200px) {
+    .mapSvg{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+    .mapSvg {
+        svg {
+            height: 650px;
+            width: 910px;
+            transform: scale(0.8);
+        }
+    }
+    .activity {
+        p {
+            font-size: 16px;
+        }
+        .card {
+            .cardbody {
+                padding: 15px 25px;
+            }
+        }
+        .women {
+            padding: 12px 24px 0;
+        }
+    }
+    .forPeople {
+        .box {
+            button {
+                padding: 12px;
+            }
+        }
+        .small {
+            .icons {
+                margin-right: 10px;
+            }
+        }
+    }
+    .menu {
+        .right {
+            a {
+                margin-left: 12px;
+            }
+        }
+    }
+    .text {
+        .upper {
+            height: 210px;
+        }
+    }
+    footer {
+        padding: 40px 60px;
+        .flex-row {
+            flex-direction: column !important;
+        }
+        .right {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .left {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .activity {
+        .women {
+            h4 {
+                margin-right: 365px !important;
+            }
+        }
+    }
+
+    .mapSvg {
+        display: none;
+    }
+    .information {
+        padding: 40px 20px;
+    }
+    .mainText {
+        h2, p {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .date {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+    .text {
+        .upper {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .lower {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+    }
+    .forPeople {
+        padding: 20px 40px;
+        .big {
+            margin-bottom: 18px;
+        }
+        .small {
+            margin-bottom: 18px;
+        }
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+        button {
+            width: 100%;
+        }
+    }
+    .activity {
+        padding-top: 20px;
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+        .women {
+            h4 {
+                margin-right: 310px;
+            }
+        }
+    }
+    .events {
+        padding: 40px 20px;
+        .content {
+            text-align: center;
+        }
+        .city {
+            text-align: center;
+        }
+        hr {
+            margin: 25px 0px;
+            display: block;
+        }
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+    }
+    .ref {
+        padding: 40px 20px;
+        .menu__links {
+            margin-bottom: 40px;
+        }
+    }
+    .footerUpper {
+        padding: 40px 60px;
+        button {
+            margin-bottom: 40px;
+        }
+        .content {
+            text-align: center;
+        }
+    }
+    footer {
+        padding: 40px 60px;
+        .flex-row {
+            flex-direction: column !important;
+        }
+        .left {
+            text-align: center;
+        }
+        .right {
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .information {
+        z-index: 1;
+        position: relative;
+    }
+    .menu {
+        .header__burger {
+            display: block;
+            position: relative;
+            width: 25px;
+            height: 15px;
+            z-index: 5;
+            span {
+                position: absolute;
+                background-color: #3b4256;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                bottom: 7px;
+            }
+        }
+        .header__burger::before, .header__burger::after {
+            content: "";
+            background-color: #3b4256;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+        .header__burger::before {
+            top: 0;
+        }
+    
+        .header__burger::after {
+            bottom: 0;
+        }
+        .menu__burger {
+            position: fixed;
+            left:0;
+            top:0;
+            top: -100%;
+            background-color: #3b4256;
+            z-index: 5;
+            padding-top: 145px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s ease 0s;
+            
+        }
+        .menu__burger.active {
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .header__burger.active {
+            span {
+                transform: scale(0);
+            }
+        }
+        .header__burger.active::before {
+            background-color: #fff;
+            transform: rotate(45deg);
+            top: 13px;
+        }
+        .header__burger.active::after {
+            background-color: #fff;
+            transform: rotate(-45deg);
+        }
+        a {
+            text-align: center;
+            color: #f4f7fb;
+        }
+    }
+    .container.active{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .forPeople {
+        .icons {
+            position: relative;
+            left: 15px
+        }
+    }
+    .activity{
+        .women {
+            h4 {
+                margin-right: 155px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header, .menu, .information, .mainText, .text, .forPeople, .mapSvg, .activity,
+    .ref, .events, .footerUpper, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    .header {
+        .img__points {
+            margin-right: 0;
+        }
+        a {
+            margin-left: 10px;
+        }
+        .img__search {
+            margin: 0;
+        }
+    }
+    .information {
+        padding: 30px;
+        h4 {
+            margin-bottom: 25px;
+        }
+    }
+    .mapSvg {
+        display: none;
+    }
+    .activity {
+        padding: 20px;
+        .img__act {
+            width: 100%;
+        }
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+    }
+    footer {
+        padding: 20px 20px;
+        .flex-row {
+            flex-direction: column !important;
+        }
+        .left {
+            text-align: center;
+        }
+        .right {
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+    .footerUpper {
+        padding: 20px 60px;
+        button {
+            margin-bottom: 40px;
+        }
+        .content, h3 {
+            text-align: center;
+        }
+        hr {
+            margin: 0;
+        }
+    }
+    .ref {
+        padding: 20px;
+        .menu__links {
+            margin-bottom: 40px;
+        }
+    }
+    .events {
+        padding: 30px 20px 20px;
+        hr {
+            margin: 10px 0px;
+            display: block;
+        }
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+    }
+    .forPeople {
+        padding: 30px 20px;
+        .a__goto {
+            .img__right {
+                margin-left: 0;
+            }
+        }
+        button {
+            width: 100%;
+        }
+        .small {
+            margin-bottom: 29px;
+
+        }
+        .big {
+            margin-bottom: 15px;
+        }
+    }
+    .mainText {
+        h2, p {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .date {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+    .text {
+        padding: 20px;
+        .upper {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .lower {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+    .header {
+        .img__search, .img__points{
+            display: none;
+        }
+        padding: 18px 15px;
+
+    }
+    .header, .menu, .information, .mainText, .text, .forPeople, .activity, .events, .ref, .footerUpper,
+    footer {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+        span {
+            font-size: 14px;
+        }
+        a {
+            font-size: 14px;
+        }
+    } 
+    .forPeople {
+        .big, .small {
+            display: flex !important;
+            flex-direction: column !important;
+            .img__icon, .img__icon1{ 
+                margin: 10px auto 0px;
+            }
+        }
+        .small {
+            .image {
+                width: 16px;
+                height: 16px;
+            }
+            .down-three {
+                position: relative;
+                left: 0;
+            }
+            .drop {
+                left: 29px;
+            }
+            .down-two {
+                left: 35px;
+            }
+            .points {
+                left: 64px;
+            }
+            .down-one {
+                left: 75px;
+            }
+            .house {
+                left: 103px;
+            }
+        }
+    }
+    .ref {
+        .block {
+            span {
+                font-size: 14px;
+            }
+        }
+        .list{
+            .that {
+                display: none;
+            }
+        }
+    }
+    .forPeople {
+        .box {
+            a{
+                font-size: 14px;
+            }
+            button {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .text {
+        .upper, .lower {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .events {
+        .content {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+    .forPeople {
+        .small {
+            .icons {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 415px) {
+    .forPeople {
+        .small {
+            .icons {
+                margin: 23px;
+            }
+        }
+    }
+    .activity {
+        .women {
+            h4 {
+                margin-right: 28px;;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .distr {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 576px){
+    .forPeople {
+        .icons {
+            margin-left: 85px;
+        }
+    }
+    .activity {
+        .women {
+            h4 {
+                margin-right: 155px;
+            }
+        }
+    }
+}
