@@ -30,14 +30,33 @@ listSecond.addEventListener("click", () => {
 
 window.onload = function() {
     const svgMap = document.querySelector("div.map")
-    const divDistr = document.querySelector("h4.distr")
-    svgMap.onmouseover = function(e) {
-        if (district.indexOf(e.target.classList[0]) !== -1) {
-            divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
-            divDistr.style.left = e.pageX + "px";
-            divDistr.style.top = e.pageY - 30 + "px";
-            divDistr.style.display = "block";
+    const map = document.querySelector("section.mapSvg")
+    const divDistr = document.querySelector(".distr")
+    const divTria = document.querySelector(".triangle-down")
+    svgMap.onmouseover = svgMap.onmouseout = (e) => {
+        if (e.type == "mouseover") {
+            if (district.indexOf(e.target.classList[0]) !== -1) {
+                divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
+                divDistr.style.left = e.pageX - 120 + "px"
+                divDistr.style.top = e.pageY - 70 + "px"
+                divTria.style.top = e.pageY - 10 + "px"
+                divTria.style.left = e.pageX - 5 + "px"
+                divTria.style.display = "block"
+                divDistr.style.display = "block"
+            }
         }
+        // if (e.type == "mouseout") {
+        //     divDistr.innerHTML = ""
+        //     divDistr.style.display = "none"
+        //     divTria.style.display = "none"
+        // }
+    }
+    map.onmouseout = (e) => {
+        if (e.type == "mouseout") {
+            divDistr.innerHTML = ""
+            divDistr.style.display = "none"
+            divTria.style.display = "none"
+         }
     }
 }
 
