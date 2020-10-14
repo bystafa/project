@@ -28,30 +28,6 @@ listSecond.addEventListener("click", () => {
     menuSecond.classList.toggle("active")
 })
 
-window.onload = function() {
-    const svgMap = document.querySelector("div.map")
-    const divDistr = document.querySelector(".distr")
-    const divTria = document.querySelector(".triangle-down")
-    svgMap.onmouseover = svgMap.onmousemove = svgMap.onmouseout = (e) => {
-        if ((e.type === "mouseover") && (district.indexOf(e.target.classList[0]) !== -1))  {
-            divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
-            divTria.style.display = "block"
-            divDistr.style.display = "block"
-        }
-        if (e.type === "mousemove") {
-            divDistr.style.left = e.pageX - 120 + "px"
-            divDistr.style.top = e.pageY - 75 + "px"
-            divTria.style.top = e.pageY - 15 + "px"
-            divTria.style.left = e.pageX - 5 + "px"
-        }
-        if (e.type === "mouseout" && e.relatedTarget && e.relatedTarget.className !== "distr" && e.relatedTarget.className !== "triangle-down") {
-            divDistr.innerHTML = ""
-            divDistr.style.display = "none"
-            divTria.style.display = "none"
-        }
-    }
-}
-
 const goto = document.querySelector("div.dropdown-menu")
 json.data.forEach(subject => {
     const span = document.createElement("span")
@@ -82,3 +58,26 @@ $(document).on("click",function(e) {
     }
 })
 
+const map = document.querySelectorAll(".part");
+map.forEach((svgMap) => {
+    const divDistr = document.querySelector(".distr")
+    const divTria = document.querySelector(".triangle-down")
+    svgMap.onmouseover = svgMap.onmousemove = svgMap.onmouseout = (e) => {
+        if ((e.type === "mouseover") && (district.indexOf(e.target.classList[0]) !== -1))  {
+            divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
+            divTria.style.display = "block"
+            divDistr.style.display = "block"
+        }
+        if (e.type === "mousemove") {
+            divDistr.style.left = e.pageX - 120 + "px"
+            divDistr.style.top = e.pageY - 77 + "px"
+            divTria.style.top = e.pageY - 17 + "px"
+            divTria.style.left = e.pageX - 5 + "px"
+        }
+        if (e.type === "mouseout" && e.relatedTarget && e.relatedTarget.className !== "distr" && e.relatedTarget.className !== "triangle-down") {
+            divDistr.innerHTML = ""
+            divDistr.style.display = "none"
+            divTria.style.display = "none"
+        }
+    }
+});
