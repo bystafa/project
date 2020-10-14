@@ -30,33 +30,25 @@ listSecond.addEventListener("click", () => {
 
 window.onload = function() {
     const svgMap = document.querySelector("div.map")
-    const map = document.querySelector("section.mapSvg")
     const divDistr = document.querySelector(".distr")
     const divTria = document.querySelector(".triangle-down")
-    svgMap.onmouseover = svgMap.onmouseout = (e) => {
-        if (e.type == "mouseover") {
-            if (district.indexOf(e.target.classList[0]) !== -1) {
-                divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
-                divDistr.style.left = e.pageX - 120 + "px"
-                divDistr.style.top = e.pageY - 70 + "px"
-                divTria.style.top = e.pageY - 10 + "px"
-                divTria.style.left = e.pageX - 5 + "px"
-                divTria.style.display = "block"
-                divDistr.style.display = "block"
-            }
+    svgMap.onmouseover = svgMap.onmousemove = svgMap.onmouseout = (e) => {
+        if ((e.type === "mouseover") && (district.indexOf(e.target.classList[0]) !== -1))  {
+            divDistr.innerHTML = document.querySelector("." + e.target.classList[0]).textContent
+            divTria.style.display = "block"
+            divDistr.style.display = "block"
         }
-        // if (e.type == "mouseout") {
-        //     divDistr.innerHTML = ""
-        //     divDistr.style.display = "none"
-        //     divTria.style.display = "none"
-        // }
-    }
-    map.onmouseout = (e) => {
-        if (e.type == "mouseout") {
+        if (e.type === "mousemove") {
+            divDistr.style.left = e.pageX - 120 + "px"
+            divDistr.style.top = e.pageY - 75 + "px"
+            divTria.style.top = e.pageY - 15 + "px"
+            divTria.style.left = e.pageX - 5 + "px"
+        }
+        if (e.type === "mouseout" && e.relatedTarget && e.relatedTarget.className !== "distr" && e.relatedTarget.className !== "triangle-down") {
             divDistr.innerHTML = ""
             divDistr.style.display = "none"
             divTria.style.display = "none"
-         }
+        }
     }
 }
 

@@ -229,6 +229,7 @@ hr {
         background-color: #fff;
         margin-bottom: 8px;
         padding: 27px 32px;
+        border-radius: 5px;
         span {
             font-family: GOSTUI2;
             font-size: 14px;
@@ -278,7 +279,9 @@ hr {
     .small {
         background-color: #fff;
         padding: 14px 32px;
+        border-radius: 5px;
         position: relative;
+        z-index: 2;
         .icons {
             position: absolute;
             display: inline-block;
@@ -322,6 +325,7 @@ hr {
             margin-right: -28px;
         }
     }
+
     .box {
         background: #0c49cd;
         border-radius: 5px;
@@ -359,6 +363,19 @@ hr {
     }
 }
 
+.lowerSmall {
+    position: relative;
+    z-index: 1;
+    margin: 0 10px;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    background-color: #f4f7fb;
+    height: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .mapSvg {
     padding-top: 80px;
     position: relative;
@@ -374,11 +391,11 @@ hr {
         color: #3b4256;
     }
     .part {
-        opacity: .3;
+        opacity: 0.3;
     }
     .part:hover {
         transition: opacity .2s ease;
-        opacity: .5;
+        opacity: .1;
     }
     a {
         text-decoration: none;
@@ -515,6 +532,8 @@ hr {
     }
     .women {
         margin-top: 8px;
+        border: 5px;
+        z-index: 2;
         background-color: #fff;
         padding: 13px 120px 13px 32px;
         position: relative;
@@ -747,8 +766,11 @@ hr {
         border-radius: 4px;
         background: #3b4256;
         margin-top: 24px;
-        outline: none !important;
     }
+    .btn:focus,
+    .btn:active {
+        box-shadow: none;
+    } 
     span {
         font-family: GOSTUI2;
         font-size: 16px;
@@ -824,9 +846,10 @@ footer {
     z-index: 999;
     top: 0;
     left: 0;
-    opacity: 0.85;
     background-color: #fff;
-    padding: 20px 20px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .triangle-down {
@@ -839,7 +862,7 @@ footer {
     left: 0;
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
-	border-top: 10px solid #fff;
+    border-top: 10px solid #fff;
 }
 
 @media (min-width: 1200px) {
@@ -1202,9 +1225,18 @@ footer {
                 margin-left: 0;
             }
         }
+        .content {
+            text-align: center;
+        }
+        .city {
+            text-align: center;
+        }
     }
     .forPeople {
         padding: 30px 20px;
+        .lowerSmall {
+            margin-bottom: 15px;
+        }
         .a__goto {
             .img__right {
                 margin-left: 0;
@@ -1243,10 +1275,10 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 575px){
 
     .header {
-        .img__search, .img__points{
+        .points__span, .search__span {
             display: none;
         }
-        padding: 18px 15px;
+        padding: 18px 25px;
 
     }
     .header, .menu, .information, .mainText, .text, .forPeople, .activity, .events, .ref, .footerUpper,
@@ -1274,11 +1306,19 @@ footer {
         }
     } 
     .forPeople {
-        .big{
+        .big {
             display: flex !important;
             flex-direction: column !important;
             .img__icon, .img__icon1{ 
                 margin: 10px auto 0px;
+            }
+        }
+        .small {
+            display: flex;
+            flex-direction: column;
+            .icons {
+                position: static;
+                text-align: center;
             }
         }
         .box {
